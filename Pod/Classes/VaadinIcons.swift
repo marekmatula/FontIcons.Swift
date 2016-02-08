@@ -540,25 +540,8 @@ public enum VaadinIcon : String {
     case CLOSE_CIRCLE_O = "\u{e810}"
     case YOUTUBE = "\u{e6e5}"
     case YOUTUBE_SQUARE = "\u{e6e4}"
-
-}
-
-extension VaadinIcon: FontEnum {
-
-    public func fontName() ->  String{
-        return "Vaadin-Icons"
-    }
-
-    public func bundleName() ->  String{
-        return "VaadinIcons.bundle"
-    }
-
-    public func unicode() ->  String{
-        return self.rawValue
-    }
-
-    public func error() ->  String{
-        return "Font: \(fontName()).ttf was NOT found!"
+bundle")
+        }
     }
 }
 

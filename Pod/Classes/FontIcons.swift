@@ -12,47 +12,44 @@ import UIKit
 public protocol FontEnum {
 
     func fontName() ->  String
-    func bundleName() ->  String
     func unicode() ->  String
     func error() ->  String
+    func loadFontIfNeeded()
 }
 
 
 public class FontLoader {
 
-    struct Static {
-//        TODO
-        static var onceToken : dispatch_once_t = 0
-    }
-
     static func loadFontIfNeeded(icon: FontEnum) {
         let fn = icon.fontName()
         if (UIFont.fontNamesForFamilyName(fn).count == 0) {
+            icon.loadFontIfNeeded()
+        }
+    }
 
-            dispatch_once(&Static.onceToken) {
-                let bundle = NSBundle(forClass: FontLoader.self)
-                var fontURL = NSURL()
-                let identifier = bundle.bundleIdentifier
+    public static func loadFont(fontName:String, bundleName: String) {
 
-                if identifier?.hasPrefix("org.cocoapods") == true {
-                    fontURL = bundle.URLForResource(fn, withExtension: "ttf", subdirectory: icon.bundleName())!
-                } else {
+        let bundle = NSBundle(forClass: FontLoader.self)
+        var fontURL = NSURL()
+        let identifier = bundle.bundleIdentifier
 
-                    fontURL = bundle.URLForResource(fn, withExtension: "ttf")!
-                }
-                let data = NSData(contentsOfURL: fontURL)!
+        if identifier?.hasPrefix("org.cocoapods") == true {
+            fontURL = bundle.URLForResource(fontName, withExtension: "ttf", subdirectory: bundleName)!
+        } else {
 
-                let provider = CGDataProviderCreateWithCFData(data)
-                let font = CGFontCreateWithDataProvider(provider)!
+            fontURL = bundle.URLForResource(fontName, withExtension: "ttf")!
+        }
+        let data = NSData(contentsOfURL: fontURL)!
 
-                var error: Unmanaged<CFError>?
-                if !CTFontManagerRegisterGraphicsFont(font, &error) {
+        let provider = CGDataProviderCreateWithCFData(data)
+        let font = CGFontCreateWithDataProvider(provider)!
 
-                    let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
-                    let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-                    NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-                }
-            }
+        var error: Unmanaged<CFError>?
+        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+
+            let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+            NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
         }
     }
 
@@ -69,15 +66,3 @@ public class FontLoader {
         return prefix + icon.unicode() + postfix
     }
 }
-
-
-
-//private struct FAStruct {
-//
-//    static let FontName = "FontAwesome"
-//    static let ErrorAnnounce = "****** FONT AWESOME SWIFT - FontAwesome font not found in the bundle or not associated with Info.plist when manual installation was performed. ******"
-//}
-
-
-
-

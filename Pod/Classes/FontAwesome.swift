@@ -12,16 +12,22 @@ extension FontAwesome: FontEnum {
         return "FontAwesome"
     }
 
-    public func bundleName() ->  String{
-        return "FontAwesome.bundle"
-    }
-
     public func unicode() ->  String{
         return self.rawValue
     }
 
     public func error() ->  String{
         return "Font: \(fontName()).ttf was NOT found!"
+    }
+
+    public func loadFontIfNeeded(){
+        struct Static {
+            static var onceToken : dispatch_once_t = 0
+        }
+
+        dispatch_once(&Static.onceToken) {
+            FontLoader.loadFont(self.fontName(), bundleName: "FontAwesome.bundle")
+        }
     }
 }
 
