@@ -6,17 +6,17 @@ public enum FontAwesome : String {
     case FAAdjust = "\u{f042}"
 }
 
-public extension FontAwesome: FontEnum {
+extension FontAwesome: FontEnum {
 
-    func fontName() ->  String{
+    public func fontName() ->  String{
         return "FontAwesome"
     }
 
-    func unicode() ->  String{
+    public func unicode() ->  String{
         return self.rawValue
     }
 
-    func error() ->  String{
+    public func error() ->  String{
         return "Font: \(fontName()).ttf was NOT found!"
     }
 }

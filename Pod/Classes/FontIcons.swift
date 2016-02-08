@@ -35,7 +35,7 @@ public class FontLoader {
 
                 if identifier?.hasPrefix("org.cocoapods") == true {
                     //TODO
-                    fontURL = bundle.URLForResource(fn, withExtension: "ttf", subdirectory: "Font-Awesome-Swift.bundle")!
+                    fontURL = bundle.URLForResource(fn, withExtension: "ttf", subdirectory: "FontIcons.bundle")!
                 } else {
 
                     fontURL = bundle.URLForResource(fn, withExtension: "ttf")!

@@ -31,10 +31,25 @@ TODO xxxdx
   s.requires_arc = true
 
 #s.source_files = 'Pod/Classes/**/*'
-  s.source_files = 'Pod/Classes/*.swift'
-  s.resource_bundles = {
-    'FontIcons' => ['Pod/Assets/*.png']
+#  s.source_files = 'Pod/Classes/*.swift'
+#  s.resource_bundles = {
+#    'FontIcons' => ['Pod/Assets/*.png']
+#  }
+
+s.subspec 'Core' do |core|
+    core.source_files = 'Pod/Classes/FontIcons.swift', 'Pod/Classes/Extensions.swift'
+    #core.dependency 'FontIcons/Core'
+end
+
+s.subspec 'FontAwesome' do |fa|
+    fa.dependency 'FontIcons/Core'
+    fa.source_files = 'Pod/Classes/FontAwesome.swift'
+    fa.resource_bundles = {
+    'FontIcons' => ['Pod/Assets/FontAwesome.ttf']
   }
+end
+
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
