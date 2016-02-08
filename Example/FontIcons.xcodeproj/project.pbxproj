@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAA6A281C68A58500374031 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A241C68A58500374031 /* ReplaceMe.swift */; };
+		1FAA6A291C68A58500374031 /* FontAwesome in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA6A251C68A58500374031 /* FontAwesome */; };
+		1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A261C68A58500374031 /* Extensions.swift */; };
+		1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A271C68A58500374031 /* FontIcons.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -26,8 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FAA6A241C68A58500374031 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ../Pod/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		1FAA6A251C68A58500374031 /* FontAwesome */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FontAwesome; path = ../Pod/Classes/FontAwesome; sourceTree = "<group>"; };
+		1FAA6A261C68A58500374031 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		1FAA6A271C68A58500374031 /* FontIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontIcons.swift; path = ../Pod/Classes/FontIcons.swift; sourceTree = "<group>"; };
 		3D4812F98A1EDFFB76322E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4A9DCB0DBF177F38CEDEED25 /* FontIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontIcons.podspec; path = ../FontIcons.podspec; sourceTree = "<group>"; };
+		4A9DCB0DBF177F38CEDEED25 /* FontIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FontIcons.podspec; path = ../FontIcons.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FontIcons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontIcons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +46,7 @@
 		607FACE51AFB9204008FA782 /* FontIcons_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontIcons_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		D2F340256D95CD585EF739AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2F340256D95CD585EF739AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAA6A231C68A53C00374031 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA6A241C68A58500374031 /* ReplaceMe.swift */,
+				1FAA6A261C68A58500374031 /* Extensions.swift */,
+				1FAA6A271C68A58500374031 /* FontIcons.swift */,
+				1FAA6A251C68A58500374031 /* FontAwesome */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1FAA6A231C68A53C00374031 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for FontIcons */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -184,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "FontIcons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -211,6 +231,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				1FAA6A291C68A58500374031 /* FontAwesome in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */,
+				1FAA6A281C68A58500374031 /* ReplaceMe.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +440,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PROJECT" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "FontIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
