@@ -12,6 +12,10 @@ extension FontAwesome: FontEnum {
         return "FontAwesome"
     }
 
+    public func bundleName() ->  String{
+        return "FontAwesome.bundle"
+    }
+
     public func unicode() ->  String{
         return self.rawValue
     }

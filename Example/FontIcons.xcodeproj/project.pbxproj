@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F1B4A421C68AC2B0008CA9E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B4A411C68AC2B0008CA9E /* Assets */; };
 		1F1B4A441C68AF850008CA9E /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A431C68AF850008CA9E /* FontAwesome.swift */; };
+		1F1B4A461C68B0F70008CA9E /* VaadinIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */; };
 		1FAA6A281C68A58500374031 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A241C68A58500374031 /* ReplaceMe.swift */; };
 		1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A261C68A58500374031 /* Extensions.swift */; };
 		1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A271C68A58500374031 /* FontIcons.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1F1B4A411C68AC2B0008CA9E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../Pod/Assets; sourceTree = "<group>"; };
 		1F1B4A431C68AF850008CA9E /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = ../Pod/Classes/FontAwesome.swift; sourceTree = "<group>"; };
+		1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaadinIcons.swift; path = ../Pod/Classes/VaadinIcons.swift; sourceTree = "<group>"; };
 		1FAA6A241C68A58500374031 /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ../Pod/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		1FAA6A261C68A58500374031 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
 		1FAA6A271C68A58500374031 /* FontIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontIcons.swift; path = ../Pod/Classes/FontIcons.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				1FAA6A261C68A58500374031 /* Extensions.swift */,
 				1FAA6A271C68A58500374031 /* FontIcons.swift */,
 				1F1B4A431C68AF850008CA9E /* FontAwesome.swift */,
+				1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1F1B4A441C68AF850008CA9E /* FontAwesome.swift in Sources */,
 				1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */,
+				1F1B4A461C68B0F70008CA9E /* VaadinIcons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

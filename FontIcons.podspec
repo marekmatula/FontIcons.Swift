@@ -45,8 +45,16 @@ s.subspec 'FontAwesome' do |fa|
     fa.dependency 'FontIcons/Core'
     fa.source_files = 'Pod/Classes/FontAwesome.swift'
     fa.resource_bundles = {
-    'FontIcons' => ['Pod/Assets/FontAwesome.ttf']
+    'FontAwesome' => ['Pod/Assets/FontAwesome.ttf']
   }
+end
+
+s.subspec 'VaadinIcons' do |vi|
+    vi.dependency 'FontIcons/Core'
+    vi.source_files = 'Pod/Classes/VaadinIcons.swift'
+    vi.resource_bundles = {
+        'VaadinIcons' => ['Pod/Assets/Vaadin-Icons.ttf']
+    }
 end
 
 

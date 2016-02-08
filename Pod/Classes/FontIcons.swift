@@ -12,6 +12,7 @@ import UIKit
 public protocol FontEnum {
 
     func fontName() ->  String
+    func bundleName() ->  String
     func unicode() ->  String
     func error() ->  String
 }
@@ -34,8 +35,7 @@ public class FontLoader {
                 let identifier = bundle.bundleIdentifier
 
                 if identifier?.hasPrefix("org.cocoapods") == true {
-                    //TODO
-                    fontURL = bundle.URLForResource(fn, withExtension: "ttf", subdirectory: "FontIcons.bundle")!
+                    fontURL = bundle.URLForResource(fn, withExtension: "ttf", subdirectory: icon.bundleName())!
                 } else {
 
                     fontURL = bundle.URLForResource(fn, withExtension: "ttf")!
