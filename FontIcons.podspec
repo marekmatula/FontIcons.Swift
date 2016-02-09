@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FontIcons"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "Swift Font icon library"
 
 # This description is used to generate tags and improve search results.
@@ -51,6 +51,13 @@ Easy extensible to other fonts.
     }
   end
 
+  s.subspec 'MaterialDesign' do |md|
+    md.dependency 'FontIcons/Core'
+    md.source_files = 'Pod/Classes/MaterialDesignIcons.swift'
+    md.resource_bundles = {
+        'MaterialDesignIcons' => ['Pod/Assets/MaterialIcons-Regular.ttf']
+    }
+  end
 
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

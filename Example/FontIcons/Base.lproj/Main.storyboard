@@ -35,7 +35,7 @@
                                                         <constraint firstAttribute="width" constant="134" id="KGO-Qz-IZ2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9h-of-Oct">
@@ -44,7 +44,7 @@
                                                         <constraint firstAttribute="width" constant="100" id="lOG-nK-RpV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -108,10 +108,20 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="showVaadinIcons" id="u3c-6X-dgy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2Q-YF-EXa">
+                                <rect key="frame" x="0.0" y="323" width="600" height="30"/>
+                                <state key="normal" title="Material Design"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="showMaterialDesing" id="5Zv-gu-H6x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="J2Q-YF-EXa" firstAttribute="top" secondItem="wK0-iP-ijw" secondAttribute="bottom" constant="42" id="5jc-2K-6Ur"/>
+                            <constraint firstItem="J2Q-YF-EXa" firstAttribute="trailing" secondItem="wK0-iP-ijw" secondAttribute="trailing" id="B5R-AA-MtO"/>
                             <constraint firstAttribute="trailing" secondItem="XFN-o4-vgf" secondAttribute="trailing" id="S8i-ck-Hrd"/>
+                            <constraint firstItem="J2Q-YF-EXa" firstAttribute="leading" secondItem="wK0-iP-ijw" secondAttribute="leading" id="XVU-Lx-7uu"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="leading" secondItem="e7D-hW-djI" secondAttribute="leading" id="bJq-la-vqr"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="top" secondItem="W9Q-R3-MPf" secondAttribute="bottom" constant="113" id="nGx-0s-SFq"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="trailing" secondItem="wK0-iP-ijw" secondAttribute="trailing" id="rm4-3S-9Hv"/>
@@ -143,6 +153,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QvY-Vu-E1Y"/>
+        <segue reference="5Zv-gu-H6x"/>
     </inferredMetricsTieBreakers>
 </document>

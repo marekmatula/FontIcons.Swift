@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F08867F1C6A469F004C86B2 /* MaterialDesignIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F08867E1C6A469F004C86B2 /* MaterialDesignIcons.swift */; };
+		1F0886811C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F0886801C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf */; };
 		1F1B4A421C68AC2B0008CA9E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B4A411C68AC2B0008CA9E /* Assets */; };
 		1F1B4A441C68AF850008CA9E /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A431C68AF850008CA9E /* FontAwesome.swift */; };
 		1F1B4A461C68B0F70008CA9E /* VaadinIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F08867E1C6A469F004C86B2 /* MaterialDesignIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialDesignIcons.swift; path = ../Pod/Classes/MaterialDesignIcons.swift; sourceTree = "<group>"; };
+		1F0886801C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MaterialIcons-Regular.ttf"; path = "../Pod/Assets/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
 		1F1B4A411C68AC2B0008CA9E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../Pod/Assets; sourceTree = "<group>"; };
 		1F1B4A431C68AF850008CA9E /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = ../Pod/Classes/FontAwesome.swift; sourceTree = "<group>"; };
 		1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaadinIcons.swift; path = ../Pod/Classes/VaadinIcons.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				1FAA6A271C68A58500374031 /* FontIcons.swift */,
 				1F1B4A431C68AF850008CA9E /* FontAwesome.swift */,
 				1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */,
+				1F08867E1C6A469F004C86B2 /* MaterialDesignIcons.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				1F0886801C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf */,
 				1FBF52B81C69D659005EED56 /* Vaadin-Icons.ttf */,
 				1FBF52B61C69D647005EED56 /* FontAwesome.ttf */,
 				1F1B4A401C68AC160008CA9E /* Resources */,
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0886811C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf in Resources */,
 				1FBF52B91C69D659005EED56 /* Vaadin-Icons.ttf in Resources */,
 				1FBF52B71C69D647005EED56 /* FontAwesome.ttf in Resources */,
 				1F1B4A421C68AC2B0008CA9E /* Assets in Resources */,
@@ -422,6 +429,7 @@
 				1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1F08867F1C6A469F004C86B2 /* MaterialDesignIcons.swift in Sources */,
 				1FBF52B41C695F94005EED56 /* FontExampleCell.swift in Sources */,
 				1F1B4A441C68AF850008CA9E /* FontAwesome.swift in Sources */,
 				1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */,
