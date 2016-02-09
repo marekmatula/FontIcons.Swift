@@ -25,7 +25,7 @@ Easy extensible to other fonts.
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Marek Matula" => "marek.matula@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FontIcons.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/marekmatula/FontIcons.Swift.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
