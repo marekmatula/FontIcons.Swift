@@ -13,7 +13,7 @@ private let defaultSize:CGFloat = 23.0
 
 public extension UIBarButtonItem {
 
-    func setFontIcon(icon: FontEnum, size: CGFloat = 23) {
+    func setFontIcon(icon: FontEnum, size: CGFloat = defaultSize) {
         setFontIconText(prefix: "", icon: icon, postfix: "", size: size)
     }
 
