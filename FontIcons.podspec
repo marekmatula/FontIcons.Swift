@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "FontIcons"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of FontIcons."
+  s.version          = "1.0.0"
+  s.summary          = "Swift Font icon library"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,10 +17,11 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-TODO xxxdx
+Universal library for Font icons. Default implementation for FontAwesome and Vaadin Icons.
+Easy extensible to other fonts.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FontIcons"
+  s.homepage         = "https://github.com/marekmatula/FontIcons.Swift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Marek Matula" => "marek.matula@gmail.com" }
@@ -30,32 +31,25 @@ TODO xxxdx
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-#s.source_files = 'Pod/Classes/**/*'
-#  s.source_files = 'Pod/Classes/*.swift'
-#  s.resource_bundles = {
-#    'FontIcons' => ['Pod/Assets/*.png']
-#  }
-
-s.subspec 'Core' do |core|
+  s.subspec 'Core' do |core|
     core.source_files = 'Pod/Classes/FontIcons.swift', 'Pod/Classes/Extensions.swift'
-    #core.dependency 'FontIcons/Core'
-end
+  end
 
-s.subspec 'FontAwesome' do |fa|
+  s.subspec 'FontAwesome' do |fa|
     fa.dependency 'FontIcons/Core'
     fa.source_files = 'Pod/Classes/FontAwesome.swift'
     fa.resource_bundles = {
-    'FontAwesome' => ['Pod/Assets/FontAwesome.ttf']
-  }
-end
+        'FontAwesome' => ['Pod/Assets/FontAwesome.ttf']
+    }
+  end
 
-s.subspec 'VaadinIcons' do |vi|
+  s.subspec 'VaadinIcons' do |vi|
     vi.dependency 'FontIcons/Core'
     vi.source_files = 'Pod/Classes/VaadinIcons.swift'
     vi.resource_bundles = {
         'VaadinIcons' => ['Pod/Assets/Vaadin-Icons.ttf']
     }
-end
+  end
 
 
 
