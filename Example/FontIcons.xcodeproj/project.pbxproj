@@ -10,6 +10,7 @@
 		1F1B4A421C68AC2B0008CA9E /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B4A411C68AC2B0008CA9E /* Assets */; };
 		1F1B4A441C68AF850008CA9E /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A431C68AF850008CA9E /* FontAwesome.swift */; };
 		1F1B4A461C68B0F70008CA9E /* VaadinIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */; };
+		1FA2C5441C69DF9A00FC671B /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2C5431C69DF9A00FC671B /* MainMenuViewController.swift */; };
 		1FAA6A2A1C68A58500374031 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A261C68A58500374031 /* Extensions.swift */; };
 		1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA6A271C68A58500374031 /* FontIcons.swift */; };
 		1FBF52B41C695F94005EED56 /* FontExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF52B31C695F94005EED56 /* FontExampleCell.swift */; };
@@ -49,6 +50,7 @@
 		1F1B4A411C68AC2B0008CA9E /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../Pod/Assets; sourceTree = "<group>"; };
 		1F1B4A431C68AF850008CA9E /* FontAwesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = ../Pod/Classes/FontAwesome.swift; sourceTree = "<group>"; };
 		1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VaadinIcons.swift; path = ../Pod/Classes/VaadinIcons.swift; sourceTree = "<group>"; };
+		1FA2C5431C69DF9A00FC671B /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		1FAA6A261C68A58500374031 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
 		1FAA6A271C68A58500374031 /* FontIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontIcons.swift; path = ../Pod/Classes/FontIcons.swift; sourceTree = "<group>"; };
 		1FBF52B31C695F94005EED56 /* FontExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExampleCell.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1FA2C5431C69DF9A00FC671B /* MainMenuViewController.swift */,
 				1FBF52B31C695F94005EED56 /* FontExampleCell.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA2C5441C69DF9A00FC671B /* MainMenuViewController.swift in Sources */,
 				1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

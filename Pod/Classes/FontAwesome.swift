@@ -5,7 +5,7 @@ public enum FontAwesome:Int{
 
 }
 
-let unicodeMap:[FontAwesome: String] = [
+let faUnicodeMap:[FontAwesome: String] = [
     ._500px:"\u{f26e}", .Adjust:"\u{f042}", .Adn:"\u{f170}", .AlignCenter:"\u{f037}", .AlignJustify:"\u{f039}", .AlignLeft:"\u{f036}",
     .AlignRight:"\u{f038}", .Amazon:"\u{f270}", .Ambulance:"\u{f0f9}", .Anchor:"\u{f13d}", .Android:"\u{f17b}", .Angellist:"\u{f209}",
     .AngleDoubleDown:"\u{f103}", .AngleDoubleLeft:"\u{f100}", .AngleDoubleRight:"\u{f101}", .AngleDoubleUp:"\u{f102}", .AngleDown:"\u{f107}", .AngleLeft:"\u{f104}",
@@ -130,7 +130,7 @@ extension FontAwesome: FontEnum {
     }
 
     public func unicode() ->  String{
-        return unicodeMap[self] ?? ""
+        return faUnicodeMap[self] ?? ""
     }
 
     public func error() ->  String{
@@ -148,7 +148,7 @@ extension FontAwesome: FontEnum {
     }
 
     public func allValues() ->  [FontAwesome]{
-        let keys = Array(unicodeMap.keys)
+        let keys = Array(faUnicodeMap.keys)
         return keys
     }
 }
