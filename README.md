@@ -10,7 +10,7 @@ Source code is based on [Font-Awesome-Swift](https://github.com/Vaberer/Font-Awe
 
 Need any other font? Create a issue with details.
 
-[![CI Status](http://img.shields.io/travis/Marek Matula/FontIcons.svg?style=flat)](https://travis-ci.org/Marek Matula/FontIcons)
+[![CI Status](http://img.shields.io/travis/marekmatula/FontIcons.Swift.svg?style=flat)](https://travis-ci.org/marekmatula/FontIcons)
 [![Version](https://img.shields.io/cocoapods/v/FontIcons.svg?style=flat)](http://cocoapods.org/pods/FontIcons)
 [![License](https://img.shields.io/cocoapods/l/FontIcons.svg?style=flat)](http://cocoapods.org/pods/FontIcons)
 [![Platform](https://img.shields.io/cocoapods/p/FontIcons.svg?style=flat)](http://cocoapods.org/pods/FontIcons)
