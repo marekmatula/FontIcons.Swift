@@ -52,7 +52,10 @@ func setFontIconText()
 ```
 
 See Extensions.swift for other available methods.
-Supported classes are: UIButton, UIBarButtonItem, UILabel, UIImageView, UITabBarItem, UISegmentedControl, UIImage, UISlider
+Supported classes are:
+```Swift
+UIButton, UIBarButtonItem, UILabel, UIImageView, UITabBarItem, UISegmentedControl, UIImage, UISlider
+```
 
 
 ## Author
