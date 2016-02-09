@@ -40,7 +40,6 @@ class FADS: NSObject, UITableViewDataSource {
 
         let icon = faIcons[indexPath.row]
         c.iconLabel.setFontIcon(icon)
-        //        c.iconLabel.text = "TODO"
         c.nameLabel.text = "\(icon)"
 
         return c
@@ -63,7 +62,6 @@ class VIDS: NSObject, UITableViewDataSource {
 
         let icon = viIcons[indexPath.row]
         c.iconLabel.setFontIcon(icon)
-        //        c.iconLabel.text = "TODO"
         c.nameLabel.text = "\(icon)"
 
         return c
