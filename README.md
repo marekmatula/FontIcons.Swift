@@ -6,7 +6,9 @@ Contains two default implementations:
  - [VaadinIcons](https://vaadin.com/font-icons) 1.0 
  
 
-Source code is based on https://github.com/Vaberer/Font-Awesome-Swift
+Source code is based on [Font-Awesome-Swift](https://github.com/Vaberer/Font-Awesome-Swift)
+
+Need any other font? Create a issue with details.
 
 [![CI Status](http://img.shields.io/travis/Marek Matula/FontIcons.svg?style=flat)](https://travis-ci.org/Marek Matula/FontIcons)
 [![Version](https://img.shields.io/cocoapods/v/FontIcons.svg?style=flat)](http://cocoapods.org/pods/FontIcons)
