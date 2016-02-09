@@ -2,7 +2,7 @@
 
 Universal library for Font icons. 
 Contains two default implementations:
- - [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.4.0 
+ - [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.5.0 
  - [VaadinIcons](https://vaadin.com/font-icons) 1.0 
  
 
