@@ -1,12 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'FontIcons_Example', :exclusive => true do
+target 'FontIcons_Example' do
   pod 'FontIcons', :path => '../'
 end
 
-target 'FontIcons_Tests', :exclusive => true do
+target 'FontIcons_Tests' do
   pod 'FontIcons', :path => '../'
 
-  
 end
