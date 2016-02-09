@@ -30,16 +30,14 @@ public class FontLoader {
     public static func loadFont(fontName:String, bundleName: String) {
 
         let bundle = NSBundle(forClass: FontLoader.self)
-        var fontURL = NSURL()
-        let identifier = bundle.bundleIdentifier
+        var fontURL : NSURL?
 
-        if identifier?.hasPrefix("org.cocoapods") == true {
-            fontURL = bundle.URLForResource(fontName, withExtension: "ttf", subdirectory: bundleName)!
-        } else {
-
-            fontURL = bundle.URLForResource(fontName, withExtension: "ttf")!
+        fontURL = bundle.URLForResource(fontName, withExtension: "ttf", subdirectory: bundleName)
+        if fontURL == nil{
+            fontURL = bundle.URLForResource(fontName, withExtension: "ttf")
         }
-        let data = NSData(contentsOfURL: fontURL)!
+
+        let data = NSData(contentsOfURL: fontURL!)!
 
         let provider = CGDataProviderCreateWithCFData(data)
         let font = CGFontCreateWithDataProvider(provider)!

@@ -146,5 +146,10 @@ extension FontAwesome: FontEnum {
             FontLoader.loadFont(self.fontName(), bundleName: "FontAwesome.bundle")
         }
     }
+
+    public func allValues() ->  [FontAwesome]{
+        let keys = Array(unicodeMap.keys)
+        return keys
+    }
 }
 
