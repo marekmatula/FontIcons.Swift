@@ -2,9 +2,9 @@
 
 Universal library for Font icons. 
 Contains two default implementations:
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.5.0 
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.6.3 
 - [VaadinIcons](https://vaadin.com/font-icons) 1.0 
-- [MaterialDesignIcons](http://github.com/google/material-design-icons/) 2.2.0 
+- [MaterialDesignIcons](http://github.com/google/material-design-icons/) 3.0.1 
  
 
 Source code is based on [Font-Awesome-Swift](https://github.com/Vaberer/Font-Awesome-Swift)
