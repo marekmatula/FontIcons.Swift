@@ -34,7 +34,7 @@ class MainMenuViewController: UIViewController {
 }
 
 class FADS: NSObject, UITableViewDataSource {
-    let faIcons:[FontAwesome] = FontAwesome._500px.allValues()
+    let faIcons:[FontAwesome] = FontAwesome._500px.allValues().sort {return $0.rawValue < $1.rawValue}
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
@@ -54,7 +54,7 @@ class FADS: NSObject, UITableViewDataSource {
 
 class VIDS: NSObject, UITableViewDataSource {
    
-    let viIcons:[VaadinIcon] = VaadinIcon.Crop.allValues()
+    let viIcons:[VaadinIcon] = VaadinIcon.Crop.allValues().sort {return $0.rawValue < $1.rawValue}
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
@@ -74,7 +74,7 @@ class VIDS: NSObject, UITableViewDataSource {
 
 class MDDS: NSObject, UITableViewDataSource {
 
-    let icons:[MDIcon] = MDIcon.Email.allValues()
+    let icons:[MDIcon] = MDIcon.Email.allValues().sort {return $0.rawValue < $1.rawValue}
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
