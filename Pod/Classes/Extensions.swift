@@ -112,7 +112,7 @@ public extension UIImage {
         attributedString.drawInRect(CGRectMake(0, (size.height - fontSize) / 2, size.width, fontSize))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        self.init(CGImage: image.CGImage!, scale: image.scale, orientation: image.imageOrientation)
+        self.init(CGImage: image!.CGImage!, scale: image!.scale, orientation: image!.imageOrientation)
     }
 }
 
