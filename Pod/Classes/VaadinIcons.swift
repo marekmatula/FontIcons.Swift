@@ -117,14 +117,12 @@ extension VaadinIcon: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    public func loadFontIfNeeded(){
-        struct Static {
-            static let sharedInstance = Static(font: VaadinIcon.abacus)
+    private static var initFont: () {
+        FontLoader.loadFont(VaadinIcon.abacus.fontName(), bundleName: "VaadinIcons.bundle")
+    }
 
-            init(font: FontEnum) {
-                FontLoader.loadFont(font.fontName(), bundleName: "VaadinIcons.bundle")
-            }
-        }
+    public func loadFontIfNeeded(){
+        VaadinIcon.initFont
     }
 
     public func allValues() ->  [VaadinIcon]{

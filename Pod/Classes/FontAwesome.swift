@@ -127,19 +127,18 @@ extension FontAwesome: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    public func loadFontIfNeeded(){
-        struct Static {
-            static let sharedInstance = Static(font: FontAwesome.adn)
+    private static var initFont: () {
+        FontLoader.loadFont(FontAwesome.youtube.fontName(), bundleName: "FontAwesome.bundle")
+    }
 
-            init(font: FontEnum) {
-                FontLoader.loadFont(font.fontName(), bundleName: "FontAwesome.bundle")
-            }
-        }
+    public func loadFontIfNeeded(){
+       FontAwesome.initFont
     }
 
     public func allValues() ->  [FontAwesome]{
         let keys = Array(faUnicodeMap.keys)
         return keys
     }
+
 }
 

@@ -184,14 +184,12 @@ extension MDIcon: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    public func loadFontIfNeeded(){
-        struct Static {
-            static let sharedInstance = Static(font: MDIcon.accessAlarm)
+    private static var initFont: () {
+        FontLoader.loadFont(MDIcon.wifi.fontName(), bundleName: "MaterialDesignIcons.bundle")
+    }
 
-            init(font: FontEnum) {
-                FontLoader.loadFont(font.fontName(), bundleName: "MaterialDesignIcons.bundle")
-            }
-        }
+    public func loadFontIfNeeded(){
+        MDIcon.initFont
     }
 
     public func allValues() -> [MDIcon]{
