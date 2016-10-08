@@ -100,11 +100,16 @@ let viUnicodeMap:[VaadinIcon: String] = [
     .twitterSquare:"\u{e6de}", .umbrella:"\u{e6e0}", .underline:"\u{e744}", .unlink:"\u{e745}", .unlock:"\u{e80c}", .upload:"\u{e746}",
     .uploadAlt:"\u{e6e1}", .user:"\u{e80d}", .userCard:"\u{e61a}", .userCheck:"\u{e61b}", .userClock:"\u{e61c}", .userHeart:"\u{e61d}",
     .users:"\u{e747}", .vaadinH:"\u{e80e}", .vaadinV:"\u{e80f}", .viewport:"\u{e681}", .vimeo:"\u{e6e3}", .vimeoSquare:"\u{e6e2}",
-    .volume:"\u{e7ac}", .volumeDown:"\u{e7a9}", .volumeOff:"\u{e7aa}", .volumeUp:"\u{e7ab}", .warning:"\u{e748}", .wrench:"\u{e749}", 
+    .volume:"\u{e7ac}", .volumeDown:"\u{e7a9}", .volumeOff:"\u{e7aa}", .volumeUp:"\u{e7ab}", .warning:"\u{e748}", .wrench:"\u{e749}",
     .youtube:"\u{e6e5}", .youtubeSquare:"\u{e6e4}"]
 
+
+let fontIconsLoadVaadinIcons:() = {
+    FontLoader.loadFont(VaadinIcon.abacus.fontName(), bundleName: "VaadinIcons.bundle")
+}()
+
 extension VaadinIcon: FontEnum {
-    
+
     public func fontName() ->  String{
         return "Vaadin-Icons"
     }
@@ -117,12 +122,8 @@ extension VaadinIcon: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    private static var initFont: () {
-        FontLoader.loadFont(VaadinIcon.abacus.fontName(), bundleName: "VaadinIcons.bundle")
-    }
-
     public func loadFontIfNeeded(){
-        VaadinIcon.initFont
+        fontIconsLoadVaadinIcons
     }
 
     public func allValues() ->  [VaadinIcon]{

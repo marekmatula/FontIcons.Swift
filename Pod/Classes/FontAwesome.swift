@@ -109,12 +109,15 @@ let faUnicodeMap:[FontAwesome: String] = [
     .vimeoSquare:"\u{f194}", .vine:"\u{f1ca}", .vk:"\u{f189}", .volumeControlPhone:"\u{f2a0}", .volumeDown:"\u{f027}", .volumeOff:"\u{f026}",
     .volumeUp:"\u{f028}", .weibo:"\u{f18a}", .weixin:"\u{f1d7}", .whatsapp:"\u{f232}", .wheelchair:"\u{f193}", .wheelchairAlt:"\u{f29b}",
     .wifi:"\u{f1eb}", .wikipediaW:"\u{f266}", .windows:"\u{f17a}", .wordpress:"\u{f19a}", .wpbeginner:"\u{f297}", .wpforms:"\u{f298}",
-    .wrench:"\u{f0ad}", .xing:"\u{f168}", .xingSquare:"\u{f169}", .yCombinator:"\u{f23b}", .yahoo:"\u{f19e}", .yelp:"\u{f1e9}", 
+    .wrench:"\u{f0ad}", .xing:"\u{f168}", .xingSquare:"\u{f169}", .yCombinator:"\u{f23b}", .yahoo:"\u{f19e}", .yelp:"\u{f1e9}",
     .yoast:"\u{f2b1}", .youtube:"\u{f167}", .youtubePlay:"\u{f16a}", .youtubeSquare:"\u{f166}"]
 
+let fontIconsLoadFontAwesome:() = {
+    FontLoader.loadFont(FontAwesome.youtube.fontName(), bundleName: "FontAwesome.bundle")
+}()
 
 extension FontAwesome: FontEnum {
-    
+
     public func fontName() ->  String{
         return "FontAwesome"
     }
@@ -127,18 +130,14 @@ extension FontAwesome: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    private static var initFont: () {
-        FontLoader.loadFont(FontAwesome.youtube.fontName(), bundleName: "FontAwesome.bundle")
-    }
-
     public func loadFontIfNeeded(){
-       FontAwesome.initFont
+        fontIconsLoadFontAwesome
     }
 
     public func allValues() ->  [FontAwesome]{
         let keys = Array(faUnicodeMap.keys)
         return keys
     }
-
+    
 }
 

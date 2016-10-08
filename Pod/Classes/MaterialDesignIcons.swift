@@ -165,17 +165,22 @@ let mdUnicodeMap:[MDIcon: String] = [
     .viewQuilt:"\u{e8f1}", .viewStream:"\u{e8f2}", .viewWeek:"\u{e8f3}", .vignette:"\u{e435}", .visibility:"\u{e8f4}", .visibilityOff:"\u{e8f5}",
     .voiceChat:"\u{e62e}", .voicemail:"\u{e0d9}", .volumeDown:"\u{e04d}", .volumeMute:"\u{e04e}", .volumeOff:"\u{e04f}", .volumeUp:"\u{e050}",
     .vpnKey:"\u{e0da}", .vpnLock:"\u{e62f}", .wallpaper:"\u{e1bc}", .warning:"\u{e002}", .watch:"\u{e334}", .watchLater:"\u{e924}",
-    .wbAuto:"\u{e42c}", .wbCloudy:"\u{e42d}", .wbIncandescent:"\u{e42e}", .wbIridescent:"\u{e436}", .wbSunny:"\u{e430}", .wc:"\u{e63d}", 
-    .web:"\u{e051}", .webAsset:"\u{e069}", .weekend:"\u{e16b}", .whatshot:"\u{e80e}", .widgets:"\u{e1bd}", .wifi:"\u{e63e}", 
-    .wifiLock:"\u{e1e1}", .wifiTethering:"\u{e1e2}", .work:"\u{e8f9}", .wrapText:"\u{e25b}", .youtubeSearchedFor:"\u{e8fa}", .zoomIn:"\u{e8ff}", 
+    .wbAuto:"\u{e42c}", .wbCloudy:"\u{e42d}", .wbIncandescent:"\u{e42e}", .wbIridescent:"\u{e436}", .wbSunny:"\u{e430}", .wc:"\u{e63d}",
+    .web:"\u{e051}", .webAsset:"\u{e069}", .weekend:"\u{e16b}", .whatshot:"\u{e80e}", .widgets:"\u{e1bd}", .wifi:"\u{e63e}",
+    .wifiLock:"\u{e1e1}", .wifiTethering:"\u{e1e2}", .work:"\u{e8f9}", .wrapText:"\u{e25b}", .youtubeSearchedFor:"\u{e8fa}", .zoomIn:"\u{e8ff}",
     .zoomOut:"\u{e900}", .zoomOutMap:"\u{e56b}"]
 
+
+let fontIconsLoadMaterialDesign:() = {
+    FontLoader.loadFont(MDIcon.wifi.fontName(), bundleName: "MaterialDesignIcons.bundle")
+}()
+
 extension MDIcon: FontEnum {
-    
+
     public func fontName() ->  String{
         return "MaterialIcons-Regular"
     }
-    
+
     public func unicode() ->  String{
         return mdUnicodeMap[self] ?? ""
     }
@@ -184,12 +189,8 @@ extension MDIcon: FontEnum {
         return "Font: \(fontName()).ttf was NOT found!"
     }
 
-    private static var initFont: () {
-        FontLoader.loadFont(MDIcon.wifi.fontName(), bundleName: "MaterialDesignIcons.bundle")
-    }
-
     public func loadFontIfNeeded(){
-        MDIcon.initFont
+        fontIconsLoadMaterialDesign
     }
 
     public func allValues() -> [MDIcon]{
