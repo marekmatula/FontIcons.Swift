@@ -17,13 +17,15 @@ Need any other font? Create a issue with details.
 [![Platform](https://img.shields.io/cocoapods/p/FontIcons.svg?style=flat)](http://cocoapods.org/pods/FontIcons)
 
 ## Usage
+- Use FontIcons 1.1.0 with Swift 2.2
+- Use FontIcons 1.2.1 with Swift 2.3
+- Use FontIcons 1.3.0 with Swift 3.0
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 
-
-
 ## Requirements
+- Xcode 8
 
 ## Installation
 
