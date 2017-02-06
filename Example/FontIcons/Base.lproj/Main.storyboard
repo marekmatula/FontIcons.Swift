@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fZb-IR-Zwt">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fZb-IR-Zwt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,20 +19,22 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aHS-IP-H16">
+                                <rect key="frame" x="0.0" y="44" width="375" height="559"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FontExample" rowHeight="44" id="Fy2-9M-7YZ" customClass="FontExampleCell" customModule="FontIcons_Example">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fy2-9M-7YZ" id="Rph-fs-Qjx">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI8-pd-FSA">
+                                                    <rect key="frame" x="8" y="8" width="294" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="294" id="KGO-Qz-IZ2"/>
                                                     </constraints>
@@ -38,6 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9h-of-Oct">
+                                                    <rect key="frame" x="267" y="8" width="100" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="lOG-nK-RpV"/>
                                                     </constraints>
@@ -63,20 +69,36 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5b-Me-Siv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.932752245792831" green="1" blue="0.26830137118053721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aHS-IP-H16" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="16g-X4-1pQ"/>
+                            <constraint firstItem="aHS-IP-H16" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="44" id="16g-X4-1pQ"/>
                             <constraint firstAttribute="trailing" secondItem="aHS-IP-H16" secondAttribute="trailing" id="3gD-nw-pJc"/>
                             <constraint firstItem="aHS-IP-H16" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7qa-u8-LrP"/>
                             <constraint firstItem="aHS-IP-H16" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="jzh-lW-n5X"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
+                        <outlet property="search" destination="b5b-Me-Siv" id="S5N-IX-Pbl"/>
+                        <outlet property="searchDisplayController" destination="aXh-Rx-YKV" id="hTS-bx-B8B"/>
                         <outlet property="tableView" destination="aHS-IP-H16" id="fcK-mB-Qqz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="aXh-Rx-YKV">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="jeg-Wp-UN4"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="Hdl-vL-qQo"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="D9b-uK-Zza"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="6Ix-7z-kQS"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2047.2" y="-12.143928035982009"/>
         </scene>
@@ -93,18 +115,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFN-o4-vgf">
+                                <rect key="frame" x="0.0" y="177" width="375" height="30"/>
                                 <state key="normal" title="Font Awesome"/>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="showFontAwesome" id="QvY-Vu-E1Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-iP-ijw">
+                                <rect key="frame" x="0.0" y="251" width="375" height="30"/>
                                 <state key="normal" title="Vaadin Icons"/>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="showVaadinIcons" id="u3c-6X-dgy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2Q-YF-EXa">
+                                <rect key="frame" x="0.0" y="323" width="375" height="30"/>
                                 <state key="normal" title="Material Design"/>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="showMaterialDesing" id="5Zv-gu-H6x"/>
@@ -134,7 +159,7 @@
         <scene sceneID="nn2-Ew-2I2">
             <objects>
                 <navigationController id="fZb-IR-Zwt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPh-dx-rjh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PPh-dx-rjh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

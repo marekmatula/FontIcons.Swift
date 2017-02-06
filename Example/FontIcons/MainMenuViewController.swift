@@ -33,14 +33,19 @@ class MainMenuViewController: UIViewController {
 
 }
 
-class FADS: NSObject, UITableViewDataSource {
-    let faIcons:[FontAwesome] = FontAwesome._500px.allValues().sorted {return $0.rawValue < $1.rawValue}
+class FADS: NSObject, FontDataSource {
+    let allIcons:[FontAwesome] = FontAwesome._500px.allValues().sorted {return $0.rawValue < $1.rawValue}
+    var visibleIcons:[FontAwesome] = []
+    
+    override init() {
+        self.visibleIcons = allIcons
+    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
 
-        let icon = faIcons[(indexPath as NSIndexPath).row]
+        let icon = visibleIcons[(indexPath as NSIndexPath).row]
         c.iconLabel.setFontIcon(icon)
         c.nameLabel.text = "\(icon)"
 
@@ -48,19 +53,29 @@ class FADS: NSObject, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return faIcons.count
+        return visibleIcons.count
+    }
+    
+    func filter(text:String){
+        visibleIcons = allIcons.filter(){ icon in
+            return "\(icon)".lowercased().contains(text.lowercased())
+        }
     }
 }
 
-class VIDS: NSObject, UITableViewDataSource {
-   
-    let viIcons:[VaadinIcon] = VaadinIcon.crop.allValues().sorted {return $0.rawValue < $1.rawValue}
-
+class VIDS: NSObject, FontDataSource {
+    let allIcons:[VaadinIcon] = VaadinIcon.abacus.allValues().sorted {return $0.rawValue < $1.rawValue}
+    var visibleIcons:[VaadinIcon] = []
+    
+    override init() {
+        self.visibleIcons = allIcons
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
 
-        let icon = viIcons[(indexPath as NSIndexPath).row]
+        let icon = visibleIcons[(indexPath as NSIndexPath).row]
         c.iconLabel.setFontIcon(icon)
         c.nameLabel.text = "\(icon)"
 
@@ -68,19 +83,29 @@ class VIDS: NSObject, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viIcons.count
+        return visibleIcons.count
+    }
+    
+    func filter(text:String){
+        visibleIcons = allIcons.filter(){ icon in
+            return "\(icon)".lowercased().contains(text.lowercased())
+        }
     }
 }
 
-class MDDS: NSObject, UITableViewDataSource {
+class MDDS: NSObject, FontDataSource {
+    let allIcons:[MDIcon] = MDIcon.accessAlarm.allValues().sorted {return $0.rawValue < $1.rawValue}
+    var visibleIcons:[MDIcon] = []
 
-    let icons:[MDIcon] = MDIcon.email.allValues().sorted {return $0.rawValue < $1.rawValue}
-
+    override init() {
+        self.visibleIcons = allIcons
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
 
-        let icon = icons[(indexPath as NSIndexPath).row]
+        let icon = visibleIcons[(indexPath as NSIndexPath).row]
         c.iconLabel.setFontIcon(icon)
         c.nameLabel.text = "\(icon)"
 
@@ -88,6 +113,12 @@ class MDDS: NSObject, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return icons.count
+        return visibleIcons.count
+    }
+    
+    func filter(text:String){
+        visibleIcons = allIcons.filter(){ icon in
+            return "\(icon)".lowercased().contains(text.lowercased())
+        }
     }
 }
