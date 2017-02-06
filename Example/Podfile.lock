@@ -1,15 +1,18 @@
 PODS:
-  - FontIcons (1.3.0):
-    - FontIcons/Core (= 1.3.0)
-    - FontIcons/FontAwesome (= 1.3.0)
-    - FontIcons/MaterialDesign (= 1.3.0)
-    - FontIcons/VaadinIcons (= 1.3.0)
-  - FontIcons/Core (1.3.0)
-  - FontIcons/FontAwesome (1.3.0):
+  - FontIcons (1.3.1):
+    - FontIcons/Core (= 1.3.1)
+    - FontIcons/FontAwesome (= 1.3.1)
+    - FontIcons/Ionicons (= 1.3.1)
+    - FontIcons/MaterialDesign (= 1.3.1)
+    - FontIcons/VaadinIcons (= 1.3.1)
+  - FontIcons/Core (1.3.1)
+  - FontIcons/FontAwesome (1.3.1):
     - FontIcons/Core
-  - FontIcons/MaterialDesign (1.3.0):
+  - FontIcons/Ionicons (1.3.1):
     - FontIcons/Core
-  - FontIcons/VaadinIcons (1.3.0):
+  - FontIcons/MaterialDesign (1.3.1):
+    - FontIcons/Core
+  - FontIcons/VaadinIcons (1.3.1):
     - FontIcons/Core
 
 DEPENDENCIES:
@@ -20,7 +23,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FontIcons: ae6c7faaf7d159d1fc2a6e7f78a939ad03db3af9
+  FontIcons: b5a1f4de3a17a2adf0f6f0e5525ab0f91c6412df
 
 PODFILE CHECKSUM: bf602513ef4a3cabcd9e1864b06dd3adff3e2617
 

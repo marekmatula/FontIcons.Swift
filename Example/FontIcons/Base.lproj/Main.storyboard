@@ -142,18 +142,29 @@
                                     <action selector="generateSource:" destination="xuW-CN-8OM" eventType="touchUpInside" id="FTN-WF-YSP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoW-mf-UaM">
+                                <rect key="frame" x="0.0" y="395" width="375" height="30"/>
+                                <state key="normal" title="IonIcons"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="showIonIcons" id="Onu-N1-35k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="J2Q-YF-EXa" firstAttribute="top" secondItem="wK0-iP-ijw" secondAttribute="bottom" constant="42" id="5jc-2K-6Ur"/>
+                            <constraint firstItem="hfR-Gf-g61" firstAttribute="top" secondItem="GoW-mf-UaM" secondAttribute="bottom" constant="154" id="7Cx-dH-3le"/>
                             <constraint firstItem="J2Q-YF-EXa" firstAttribute="trailing" secondItem="wK0-iP-ijw" secondAttribute="trailing" id="B5R-AA-MtO"/>
+                            <constraint firstItem="GoW-mf-UaM" firstAttribute="leading" secondItem="J2Q-YF-EXa" secondAttribute="leading" id="Mpt-aY-QPO"/>
                             <constraint firstAttribute="trailing" secondItem="XFN-o4-vgf" secondAttribute="trailing" id="S8i-ck-Hrd"/>
+                            <constraint firstItem="GoW-mf-UaM" firstAttribute="trailing" secondItem="J2Q-YF-EXa" secondAttribute="trailing" id="VcH-de-bEF"/>
                             <constraint firstItem="J2Q-YF-EXa" firstAttribute="leading" secondItem="wK0-iP-ijw" secondAttribute="leading" id="XVU-Lx-7uu"/>
+                            <constraint firstItem="GoW-mf-UaM" firstAttribute="top" secondItem="J2Q-YF-EXa" secondAttribute="bottom" constant="42" id="YnS-3g-7NB"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="leading" secondItem="e7D-hW-djI" secondAttribute="leading" id="bJq-la-vqr"/>
                             <constraint firstItem="zVq-d5-BD2" firstAttribute="top" secondItem="hfR-Gf-g61" secondAttribute="bottom" constant="58" id="eXp-9y-TZX"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="top" secondItem="W9Q-R3-MPf" secondAttribute="bottom" constant="113" id="nGx-0s-SFq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hfR-Gf-g61" secondAttribute="trailing" id="q3m-Vv-Qbh"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="trailing" secondItem="wK0-iP-ijw" secondAttribute="trailing" id="rm4-3S-9Hv"/>
-                            <constraint firstItem="hfR-Gf-g61" firstAttribute="centerX" secondItem="J2Q-YF-EXa" secondAttribute="centerX" id="uYU-y8-Q59"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="leading" secondItem="wK0-iP-ijw" secondAttribute="leading" id="ukV-Sh-GWu"/>
                             <constraint firstItem="wK0-iP-ijw" firstAttribute="top" secondItem="XFN-o4-vgf" secondAttribute="bottom" constant="44" id="vnO-I5-g1t"/>
                             <constraint firstItem="hfR-Gf-g61" firstAttribute="leading" secondItem="e7D-hW-djI" secondAttribute="leadingMargin" id="wVL-Wk-Xgn"/>
@@ -169,7 +180,7 @@
         <scene sceneID="nn2-Ew-2I2">
             <objects>
                 <navigationController id="fZb-IR-Zwt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PPh-dx-rjh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPh-dx-rjh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -183,6 +194,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5Zv-gu-H6x"/>
+        <segue reference="Onu-N1-35k"/>
     </inferredMetricsTieBreakers>
 </document>

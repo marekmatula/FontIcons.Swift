@@ -59,6 +59,14 @@ Easy extensible to other fonts.
     }
   end
 
+  s.subspec 'Ionicons' do |io|
+    io.dependency 'FontIcons/Core'
+    io.source_files = 'Pod/Classes/Ionicons.swift'
+    io.resource_bundles = {
+        'Ionicons' => ['Pod/Assets/ionicons.ttf']
+    }
+  end
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

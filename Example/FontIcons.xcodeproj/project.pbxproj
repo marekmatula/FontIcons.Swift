@@ -29,6 +29,8 @@
 		8D8675961E48FE3D0069615E /* IoniconsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8675951E48FE3D0069615E /* IoniconsGenerator.swift */; };
 		8D86759A1E4908260069615E /* build_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D8675991E4908260069615E /* build_data.json */; };
 		8D86759C1E490EA10069615E /* SourceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759B1E490EA10069615E /* SourceGenerator.swift */; };
+		8D86759E1E4919880069615E /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759D1E4919880069615E /* Ionicons.swift */; };
+		8D8675A21E491AE20069615E /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D8675A11E491AE20069615E /* ionicons.ttf */; };
 		C216A8C1F0DFF41CF9F2B4C8 /* Pods_FontIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52D008792D69AB105D54EE1 /* Pods_FontIcons_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		8D8675951E48FE3D0069615E /* IoniconsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IoniconsGenerator.swift; path = generator/IoniconsGenerator.swift; sourceTree = "<group>"; };
 		8D8675991E4908260069615E /* build_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = build_data.json; path = "../../../../../Downloads/ionicons-2.0.1/builder/build_data.json"; sourceTree = "<group>"; };
 		8D86759B1E490EA10069615E /* SourceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SourceGenerator.swift; path = generator/SourceGenerator.swift; sourceTree = "<group>"; };
+		8D86759D1E4919880069615E /* Ionicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ionicons.swift; path = ../Pod/Classes/Ionicons.swift; sourceTree = "<group>"; };
+		8D8675A11E491AE20069615E /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = ../Pod/Assets/ionicons.ttf; sourceTree = "<group>"; };
 		8FAAD72FC56994D13BB274FF /* Pods-FontIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A08BF0C8C9A1BE7D9E747B28 /* Pods_FontIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0041665D198AB3F78280353 /* Pods-FontIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				1F1B4A431C68AF850008CA9E /* FontAwesome.swift */,
 				1F1B4A451C68B0F70008CA9E /* VaadinIcons.swift */,
 				1F08867E1C6A469F004C86B2 /* MaterialDesignIcons.swift */,
+				8D86759D1E4919880069615E /* Ionicons.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				8D8675A11E491AE20069615E /* ionicons.ttf */,
 				1F0886801C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf */,
 				1FBF52B81C69D659005EED56 /* Vaadin-Icons.ttf */,
 				1FBF52B61C69D647005EED56 /* FontAwesome.ttf */,
@@ -338,6 +344,7 @@
 				1FBF52B71C69D647005EED56 /* FontAwesome.ttf in Resources */,
 				1F1B4A421C68AC2B0008CA9E /* Assets in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				8D8675A21E491AE20069615E /* ionicons.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -453,6 +460,7 @@
 				8D8675961E48FE3D0069615E /* IoniconsGenerator.swift in Sources */,
 				1FA2C5441C69DF9A00FC671B /* MainMenuViewController.swift in Sources */,
 				1F3FA3B61DA85F3A001760F9 /* CHANGELOG.md in Sources */,
+				8D86759E1E4919880069615E /* Ionicons.swift in Sources */,
 				1FAA6A2B1C68A58500374031 /* FontIcons.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

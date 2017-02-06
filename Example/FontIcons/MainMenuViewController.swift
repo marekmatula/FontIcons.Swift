@@ -19,15 +19,22 @@ class MainMenuViewController: UIViewController {
             let vc = segue.destination as! ViewController
             vc.title = "Font Awesome"
             vc.source = FADS()
-
+            
         }else if segue.identifier == "showVaadinIcons" {
             let vc = segue.destination as! ViewController
             vc.title = "Vaadin Icons"
             vc.source = VIDS()
+            
         }else if segue.identifier == "showMaterialDesing" {
             let vc = segue.destination as! ViewController
             vc.title = "MaterialDesign Icons"
             vc.source = MDDS()
+            
+        }else if segue.identifier == "showIonIcons" {
+            let vc = segue.destination as! ViewController
+            vc.title = "IonIcons"
+            vc.source = IODS()
+            
         }
     }
     
@@ -129,32 +136,32 @@ class MDDS: NSObject, FontDataSource {
     }
 }
 
-//class IODS: NSObject, FontDataSource {
-//    let allIcons:[IonIcon] = IonIcon.alert.allValues().sorted {return $0.rawValue < $1.rawValue}
-//    var visibleIcons:[IonIcon] = []
-//    
-//    override init() {
-//        self.visibleIcons = allIcons
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        
-//        let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
-//        
-//        let icon = visibleIcons[(indexPath as NSIndexPath).row]
-//        c.iconLabel.setFontIcon(icon)
-//        c.nameLabel.text = "\(icon)"
-//        
-//        return c
-//    }
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return visibleIcons.count
-//    }
-//    
-//    func filter(text:String){
-//        visibleIcons = allIcons.filter(){ icon in
-//            return "\(icon)".lowercased().contains(text.lowercased())
-//        }
-//    }
-//}
+class IODS: NSObject, FontDataSource {
+    let allIcons:[IonIcon] = IonIcon.alert.allValues().sorted {return $0.rawValue < $1.rawValue}
+    var visibleIcons:[IonIcon] = []
+    
+    override init() {
+        self.visibleIcons = allIcons
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
+        
+        let icon = visibleIcons[(indexPath as NSIndexPath).row]
+        c.iconLabel.setFontIcon(icon)
+        c.nameLabel.text = "\(icon)"
+        
+        return c
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return visibleIcons.count
+    }
+    
+    func filter(text:String){
+        visibleIcons = allIcons.filter(){ icon in
+            return "\(icon)".lowercased().contains(text.lowercased())
+        }
+    }
+}
