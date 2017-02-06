@@ -280,7 +280,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 64ZAN7QS6N;
+						DevelopmentTeam = V6SD56ATEW;
 						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -576,9 +576,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F17BF006E8FBD0394EA3A930 /* Pods-FontIcons_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 64ZAN7QS6N;
+				DEVELOPMENT_TEAM = V6SD56ATEW;
 				INFOPLIST_FILE = FontIcons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -592,9 +592,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0041665D198AB3F78280353 /* Pods-FontIcons_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 64ZAN7QS6N;
+				DEVELOPMENT_TEAM = V6SD56ATEW;
 				INFOPLIST_FILE = FontIcons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -608,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 667CFA1E3A9AEF6AAF7C0FE5 /* Pods-FontIcons_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 64ZAN7QS6N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -632,7 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FAAD72FC56994D13BB274FF /* Pods-FontIcons_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 64ZAN7QS6N;
 				FRAMEWORK_SEARCH_PATHS = (
