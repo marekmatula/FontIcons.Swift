@@ -5,7 +5,7 @@ Contains those default implementations:
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.7.0 
 - [VaadinIcons](https://vaadin.com/font-icons) 2.0.0 
 - [MaterialDesignIcons](http://github.com/google/material-design-icons/) 3.0.1 
-- [IonIcons](http://github.com/google/material-design-icons/) 2.0.0 
+- [Ionicons](https://github.com/driftyco/ionicons/) 2.0.1 
  
 
 Source code is based on [Font-Awesome-Swift](https://github.com/Vaberer/Font-Awesome-Swift)
@@ -73,5 +73,5 @@ FontFiles have own licenses:
 - [VaadinIcons license](https://vaadin.com/font-icons/license)
 - [FontAwesome license](http://fortawesome.github.io/Font-Awesome/license/)
 - [MaterialDesignIcons license](https://github.com/google/material-design-icons/)
-- [Ionicons license](https://github.com/driftyco/ionicons/)
+- [Ionicons license](https://github.com/driftyco/ionicons/blob/master/LICENSE)
 
