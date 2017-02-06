@@ -30,6 +30,12 @@ class MainMenuViewController: UIViewController {
             vc.source = MDDS()
         }
     }
+    
+    
+    @IBAction func generateSource(_ sender: Any) {
+        let g = IoniconsGenerator()
+        g.generate()
+    }
 
 }
 
@@ -96,22 +102,22 @@ class VIDS: NSObject, FontDataSource {
 class MDDS: NSObject, FontDataSource {
     let allIcons:[MDIcon] = MDIcon.accessAlarm.allValues().sorted {return $0.rawValue < $1.rawValue}
     var visibleIcons:[MDIcon] = []
-
+    
     override init() {
         self.visibleIcons = allIcons
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
-
+        
         let icon = visibleIcons[(indexPath as NSIndexPath).row]
         c.iconLabel.setFontIcon(icon)
         c.nameLabel.text = "\(icon)"
-
+        
         return c
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return visibleIcons.count
     }
@@ -122,3 +128,33 @@ class MDDS: NSObject, FontDataSource {
         }
     }
 }
+
+//class IODS: NSObject, FontDataSource {
+//    let allIcons:[IonIcon] = IonIcon.alert.allValues().sorted {return $0.rawValue < $1.rawValue}
+//    var visibleIcons:[IonIcon] = []
+//    
+//    override init() {
+//        self.visibleIcons = allIcons
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//        let c = tableView.dequeueReusableCell(withIdentifier: "FontExample") as! FontExampleCell
+//        
+//        let icon = visibleIcons[(indexPath as NSIndexPath).row]
+//        c.iconLabel.setFontIcon(icon)
+//        c.nameLabel.text = "\(icon)"
+//        
+//        return c
+//    }
+//    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return visibleIcons.count
+//    }
+//    
+//    func filter(text:String){
+//        visibleIcons = allIcons.filter(){ icon in
+//            return "\(icon)".lowercased().contains(text.lowercased())
+//        }
+//    }
+//}

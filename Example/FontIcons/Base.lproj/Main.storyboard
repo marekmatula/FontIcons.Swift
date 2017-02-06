@@ -135,6 +135,13 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" identifier="showMaterialDesing" id="5Zv-gu-H6x"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-Gf-g61">
+                                <rect key="frame" x="16" y="579" width="343" height="30"/>
+                                <state key="normal" title="Generate source"/>
+                                <connections>
+                                    <action selector="generateSource:" destination="xuW-CN-8OM" eventType="touchUpInside" id="FTN-WF-YSP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -143,17 +150,20 @@
                             <constraint firstAttribute="trailing" secondItem="XFN-o4-vgf" secondAttribute="trailing" id="S8i-ck-Hrd"/>
                             <constraint firstItem="J2Q-YF-EXa" firstAttribute="leading" secondItem="wK0-iP-ijw" secondAttribute="leading" id="XVU-Lx-7uu"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="leading" secondItem="e7D-hW-djI" secondAttribute="leading" id="bJq-la-vqr"/>
+                            <constraint firstItem="zVq-d5-BD2" firstAttribute="top" secondItem="hfR-Gf-g61" secondAttribute="bottom" constant="58" id="eXp-9y-TZX"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="top" secondItem="W9Q-R3-MPf" secondAttribute="bottom" constant="113" id="nGx-0s-SFq"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="trailing" secondItem="wK0-iP-ijw" secondAttribute="trailing" id="rm4-3S-9Hv"/>
+                            <constraint firstItem="hfR-Gf-g61" firstAttribute="centerX" secondItem="J2Q-YF-EXa" secondAttribute="centerX" id="uYU-y8-Q59"/>
                             <constraint firstItem="XFN-o4-vgf" firstAttribute="leading" secondItem="wK0-iP-ijw" secondAttribute="leading" id="ukV-Sh-GWu"/>
                             <constraint firstItem="wK0-iP-ijw" firstAttribute="top" secondItem="XFN-o4-vgf" secondAttribute="bottom" constant="44" id="vnO-I5-g1t"/>
+                            <constraint firstItem="hfR-Gf-g61" firstAttribute="leading" secondItem="e7D-hW-djI" secondAttribute="leadingMargin" id="wVL-Wk-Xgn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tXE-d3-akE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoS-ji-haO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115" y="239"/>
+            <point key="canvasLocation" x="1114.4000000000001" y="238.83058470764618"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nn2-Ew-2I2">
