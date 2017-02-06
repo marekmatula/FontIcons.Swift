@@ -3,7 +3,7 @@
 Universal library for Font icons. 
 Contains two default implementations:
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.7.0 
-- [VaadinIcons](https://vaadin.com/font-icons) 1.0 
+- [VaadinIcons](https://vaadin.com/font-icons) 2.0.0 
 - [MaterialDesignIcons](http://github.com/google/material-design-icons/) 3.0.1 
  
 
