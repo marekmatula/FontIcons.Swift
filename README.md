@@ -2,7 +2,7 @@
 
 Universal library for Font icons. 
 Contains two default implementations:
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.6.3 
+- [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.7.0 
 - [VaadinIcons](https://vaadin.com/font-icons) 1.0 
 - [MaterialDesignIcons](http://github.com/google/material-design-icons/) 3.0.1 
  
@@ -19,7 +19,7 @@ Need any other font? Create a issue with details.
 ## Usage
 - Use FontIcons 1.1.0 with Swift 2.2
 - Use FontIcons 1.2.1 with Swift 2.3
-- Use FontIcons 1.3.0 with Swift 3.0
+- Use FontIcons 1.3.1 with Swift 3.0
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

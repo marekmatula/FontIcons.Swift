@@ -1,6 +1,7 @@
 # Change Log
 
 ## [Unreleased]
+- Font Awesome 4.7.0
 
 ## [1.3.0] - 2016-10-08
 ### Updated
