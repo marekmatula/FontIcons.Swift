@@ -1,10 +1,11 @@
 # FontIcons
 
 Universal library for Font icons. 
-Contains two default implementations:
+Contains those default implementations:
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/) 4.7.0 
 - [VaadinIcons](https://vaadin.com/font-icons) 2.0.0 
 - [MaterialDesignIcons](http://github.com/google/material-design-icons/) 3.0.1 
+- [IonIcons](http://github.com/google/material-design-icons/) 2.0.0 
  
 
 Source code is based on [Font-Awesome-Swift](https://github.com/Vaberer/Font-Awesome-Swift)
@@ -36,6 +37,7 @@ it, simply add the one or more following lines to your Podfile:
 pod "FontIcons/FontAwesome"
 pod "FontIcons/VaadinIcons"
 pod "FontIcons/MaterialDesign"
+pod "FontIcons/Ionicons"
 ```
 
 
@@ -71,4 +73,5 @@ FontFiles have own licenses:
 - [VaadinIcons license](https://vaadin.com/font-icons/license)
 - [FontAwesome license](http://fortawesome.github.io/Font-Awesome/license/)
 - [MaterialDesignIcons license](https://github.com/google/material-design-icons/)
+- [Ionicons license](https://github.com/driftyco/ionicons/)
 

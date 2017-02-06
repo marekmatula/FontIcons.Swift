@@ -4,6 +4,8 @@
 ### Updated
 - Font Awesome 4.7.0
 - Vaadin Icons 2.0.0
+### Added
+- IonIcons 2.0.0
 
 ## [1.3.0] - 2016-10-08
 ### Updated
