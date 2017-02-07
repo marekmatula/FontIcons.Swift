@@ -1,9 +1,12 @@
 # Change Log
 
 ## [Unreleased]
+
+## [1.3.1] - 2017-02-06
 ### Updated
 - Font Awesome 4.7.0
 - Vaadin Icons 2.0.0
+
 ### Added
 - IonIcons 2.0.0
 
