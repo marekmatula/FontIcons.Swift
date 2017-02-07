@@ -26,8 +26,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8D3E21601E49A82700BE6196 /* build_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E215F1E49A82700BE6196 /* build_data.json */; };
 		8D8675961E48FE3D0069615E /* IoniconsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8675951E48FE3D0069615E /* IoniconsGenerator.swift */; };
-		8D86759A1E4908260069615E /* build_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D8675991E4908260069615E /* build_data.json */; };
 		8D86759C1E490EA10069615E /* SourceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759B1E490EA10069615E /* SourceGenerator.swift */; };
 		8D86759E1E4919880069615E /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759D1E4919880069615E /* Ionicons.swift */; };
 		8D8675A21E491AE20069615E /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D8675A11E491AE20069615E /* ionicons.ttf */; };
@@ -82,6 +82,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		667CFA1E3A9AEF6AAF7C0FE5 /* Pods-FontIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3E215F1E49A82700BE6196 /* build_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = build_data.json; path = ../Pod/Assets/build_data.json; sourceTree = "<group>"; };
 		8D8675951E48FE3D0069615E /* IoniconsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IoniconsGenerator.swift; path = generator/IoniconsGenerator.swift; sourceTree = "<group>"; };
 		8D8675991E4908260069615E /* build_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = build_data.json; path = "../../../../../Downloads/ionicons-2.0.1/builder/build_data.json"; sourceTree = "<group>"; };
 		8D86759B1E490EA10069615E /* SourceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SourceGenerator.swift; path = generator/SourceGenerator.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				8D3E215F1E49A82700BE6196 /* build_data.json */,
 				8D8675A11E491AE20069615E /* ionicons.ttf */,
 				1F0886801C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf */,
 				1FBF52B81C69D659005EED56 /* Vaadin-Icons.ttf */,
@@ -338,7 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D86759A1E4908260069615E /* build_data.json in Resources */,
+				8D3E21601E49A82700BE6196 /* build_data.json in Resources */,
 				1F0886811C6A4C6D004C86B2 /* MaterialIcons-Regular.ttf in Resources */,
 				1FBF52B91C69D659005EED56 /* Vaadin-Icons.ttf in Resources */,
 				1FBF52B71C69D647005EED56 /* FontAwesome.ttf in Resources */,
