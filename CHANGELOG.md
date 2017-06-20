@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.4.0] - 2017-20-06
+### Updated
+- Support for swift >= 3.2
+
+
 ## [1.3.1] - 2017-02-06
 ### Updated
 - Font Awesome 4.7.0
