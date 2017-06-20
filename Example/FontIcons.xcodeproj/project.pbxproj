@@ -19,7 +19,7 @@
 		1FBF52B41C695F94005EED56 /* FontExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF52B31C695F94005EED56 /* FontExampleCell.swift */; };
 		1FBF52B71C69D647005EED56 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF52B61C69D647005EED56 /* FontAwesome.ttf */; };
 		1FBF52B91C69D659005EED56 /* Vaadin-Icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF52B81C69D659005EED56 /* Vaadin-Icons.ttf */; };
-		4717D9C34CBA0313D50166A5 /* Pods_FontIcons_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08BF0C8C9A1BE7D9E747B28 /* Pods_FontIcons_Tests.framework */; };
+		4ECF8C76919DAB0AF9CBE943 /* Pods_FontIcons_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C209BA599D9355158D5367 /* Pods_FontIcons_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,7 +31,7 @@
 		8D86759C1E490EA10069615E /* SourceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759B1E490EA10069615E /* SourceGenerator.swift */; };
 		8D86759E1E4919880069615E /* Ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D86759D1E4919880069615E /* Ionicons.swift */; };
 		8D8675A21E491AE20069615E /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D8675A11E491AE20069615E /* ionicons.ttf */; };
-		C216A8C1F0DFF41CF9F2B4C8 /* Pods_FontIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52D008792D69AB105D54EE1 /* Pods_FontIcons_Example.framework */; };
+		DBD886F2594C4CE61EC46086 /* Pods_FontIcons_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFB997D6963BF526A63107A /* Pods_FontIcons_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,10 @@
 		1FBF52B31C695F94005EED56 /* FontExampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExampleCell.swift; sourceTree = "<group>"; };
 		1FBF52B61C69D647005EED56 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = ../Pod/Assets/FontAwesome.ttf; sourceTree = "<group>"; };
 		1FBF52B81C69D659005EED56 /* Vaadin-Icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Vaadin-Icons.ttf"; path = "../Pod/Assets/Vaadin-Icons.ttf"; sourceTree = "<group>"; };
+		2851513F8E2271CDA74671F3 /* Pods-FontIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D4812F98A1EDFFB76322E93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		47C209BA599D9355158D5367 /* Pods_FontIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4931DB822F61E3DFC9FDF2C9 /* Pods-FontIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4A9DCB0DBF177F38CEDEED25 /* FontIcons.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FontIcons.podspec; path = ../FontIcons.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FontIcons_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontIcons_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,19 +84,16 @@
 		607FACE51AFB9204008FA782 /* FontIcons_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontIcons_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		667CFA1E3A9AEF6AAF7C0FE5 /* Pods-FontIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D3E215F1E49A82700BE6196 /* build_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = build_data.json; path = ../Pod/Assets/build_data.json; sourceTree = "<group>"; };
 		8D8675951E48FE3D0069615E /* IoniconsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IoniconsGenerator.swift; path = generator/IoniconsGenerator.swift; sourceTree = "<group>"; };
 		8D8675991E4908260069615E /* build_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = build_data.json; path = "../../../../../Downloads/ionicons-2.0.1/builder/build_data.json"; sourceTree = "<group>"; };
 		8D86759B1E490EA10069615E /* SourceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SourceGenerator.swift; path = generator/SourceGenerator.swift; sourceTree = "<group>"; };
 		8D86759D1E4919880069615E /* Ionicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ionicons.swift; path = ../Pod/Classes/Ionicons.swift; sourceTree = "<group>"; };
 		8D8675A11E491AE20069615E /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = ../Pod/Assets/ionicons.ttf; sourceTree = "<group>"; };
-		8FAAD72FC56994D13BB274FF /* Pods-FontIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A08BF0C8C9A1BE7D9E747B28 /* Pods_FontIcons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontIcons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0041665D198AB3F78280353 /* Pods-FontIcons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8EFB997D6963BF526A63107A /* Pods_FontIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E73776C3035B53F6AFE225 /* Pods-FontIcons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D2F340256D95CD585EF739AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E52D008792D69AB105D54EE1 /* Pods_FontIcons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontIcons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F17BF006E8FBD0394EA3A930 /* Pods-FontIcons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F41D3705BA1A36DE9B203C13 /* Pods-FontIcons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontIcons_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C216A8C1F0DFF41CF9F2B4C8 /* Pods_FontIcons_Example.framework in Frameworks */,
+				DBD886F2594C4CE61EC46086 /* Pods_FontIcons_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,13 +109,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4717D9C34CBA0313D50166A5 /* Pods_FontIcons_Tests.framework in Frameworks */,
+				4ECF8C76919DAB0AF9CBE943 /* Pods_FontIcons_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B4F82D6F0CB987AE5D0AD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2851513F8E2271CDA74671F3 /* Pods-FontIcons_Example.debug.xcconfig */,
+				4931DB822F61E3DFC9FDF2C9 /* Pods-FontIcons_Example.release.xcconfig */,
+				F41D3705BA1A36DE9B203C13 /* Pods-FontIcons_Tests.debug.xcconfig */,
+				A1E73776C3035B53F6AFE225 /* Pods-FontIcons_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1F1B4A401C68AC160008CA9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +162,8 @@
 				607FACD21AFB9204008FA782 /* Example for FontIcons */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				DC7FA2895D6AD7E6F897E765 /* Pods */,
-				C3D4C556F9823A12B65322B7 /* Frameworks */,
+				09B4F82D6F0CB987AE5D0AD2 /* Pods */,
+				B6456BFCDF89BAD2F1D16E50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,24 +239,13 @@
 			name = Generator;
 			sourceTree = "<group>";
 		};
-		C3D4C556F9823A12B65322B7 /* Frameworks */ = {
+		B6456BFCDF89BAD2F1D16E50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E52D008792D69AB105D54EE1 /* Pods_FontIcons_Example.framework */,
-				A08BF0C8C9A1BE7D9E747B28 /* Pods_FontIcons_Tests.framework */,
+				8EFB997D6963BF526A63107A /* Pods_FontIcons_Example.framework */,
+				47C209BA599D9355158D5367 /* Pods_FontIcons_Tests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC7FA2895D6AD7E6F897E765 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F17BF006E8FBD0394EA3A930 /* Pods-FontIcons_Example.debug.xcconfig */,
-				B0041665D198AB3F78280353 /* Pods-FontIcons_Example.release.xcconfig */,
-				667CFA1E3A9AEF6AAF7C0FE5 /* Pods-FontIcons_Tests.debug.xcconfig */,
-				8FAAD72FC56994D13BB274FF /* Pods-FontIcons_Tests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,13 +255,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FontIcons_Example" */;
 			buildPhases = (
-				6DD97254A1B457B159BA5CE0 /* [CP] Check Pods Manifest.lock */,
+				8018C82E989F533C28F11C79 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				1FBF52B51C69D5F1005EED56 /* CopyFiles */,
-				6C97DAF9A9361B64DCF8996F /* [CP] Embed Pods Frameworks */,
-				97A5EDA41067926C05D16BAF /* [CP] Copy Pods Resources */,
+				A41B2FDAB657F52F0DF83D74 /* [CP] Embed Pods Frameworks */,
+				B55D6ECD6A855F704EE6E6A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,12 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FontIcons_Tests" */;
 			buildPhases = (
-				56C74A9C3561111EFE8DF63B /* [CP] Check Pods Manifest.lock */,
+				72B2A540ACA3614FD5C76F63 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				179B05A426BC9F8EBDBC0116 /* [CP] Embed Pods Frameworks */,
-				9913B65BE2D1B613CAD27D07 /* [CP] Copy Pods Resources */,
+				D96749D88BBE5AD72D8AA516 /* [CP] Embed Pods Frameworks */,
+				BE68497EC217A7D9C64F80E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,22 +362,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		179B05A426BC9F8EBDBC0116 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		56C74A9C3561111EFE8DF63B /* [CP] Check Pods Manifest.lock */ = {
+		72B2A540ACA3614FD5C76F63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,7 +377,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6C97DAF9A9361B64DCF8996F /* [CP] Embed Pods Frameworks */ = {
+		8018C82E989F533C28F11C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A41B2FDAB657F52F0DF83D74 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,22 +407,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DD97254A1B457B159BA5CE0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		97A5EDA41067926C05D16BAF /* [CP] Copy Pods Resources */ = {
+		B55D6ECD6A855F704EE6E6A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,7 +422,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontIcons_Example/Pods-FontIcons_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9913B65BE2D1B613CAD27D07 /* [CP] Copy Pods Resources */ = {
+		BE68497EC217A7D9C64F80E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,6 +435,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96749D88BBE5AD72D8AA516 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontIcons_Tests/Pods-FontIcons_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -604,7 +604,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F17BF006E8FBD0394EA3A930 /* Pods-FontIcons_Example.debug.xcconfig */;
+			baseConfigurationReference = 2851513F8E2271CDA74671F3 /* Pods-FontIcons_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -620,7 +620,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0041665D198AB3F78280353 /* Pods-FontIcons_Example.release.xcconfig */;
+			baseConfigurationReference = 4931DB822F61E3DFC9FDF2C9 /* Pods-FontIcons_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -636,7 +636,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 667CFA1E3A9AEF6AAF7C0FE5 /* Pods-FontIcons_Tests.debug.xcconfig */;
+			baseConfigurationReference = F41D3705BA1A36DE9B203C13 /* Pods-FontIcons_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,7 +660,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FAAD72FC56994D13BB274FF /* Pods-FontIcons_Tests.release.xcconfig */;
+			baseConfigurationReference = A1E73776C3035B53F6AFE225 /* Pods-FontIcons_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
