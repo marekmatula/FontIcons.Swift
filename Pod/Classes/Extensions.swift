@@ -21,7 +21,6 @@ public extension UIBarButtonItem {
         
         let font = FontLoader.getFont(icon, iconSize: size)
         setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
-        setTitleTextAttributes([NSFontAttributeName: font], for: .selected)
         setTitleTextAttributes([NSFontAttributeName: font], for: .highlighted)
         setTitleTextAttributes([NSFontAttributeName: font], for: .disabled)
         #if giOS8OrGreater
