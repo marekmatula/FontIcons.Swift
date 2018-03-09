@@ -21,7 +21,7 @@ Need any other font? Create a issue with details.
 - Use FontIcons 1.1.0 with Swift 2.2
 - Use FontIcons 1.2.1 with Swift 2.3
 - Use FontIcons 1.3.1 with Swift 3.0
-- Use FontIcons 1.4.0 with Swift => 3.2
+- Use FontIcons 1.4.x with Swift => 3.2
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
