@@ -22,8 +22,8 @@ class GenericGenerator{
     }
     
     private func lowercaseFirstLetter(text:String) -> String {
-        let first = String(text.characters.prefix(1)).lowercased()
-        let other = String(text.characters.dropFirst())
+        let first = String(text.prefix(1)).lowercased()
+        let other = String(text.dropFirst())
         return first + other
     }
 

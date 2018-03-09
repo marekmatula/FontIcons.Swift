@@ -9,20 +9,20 @@
 import Foundation
 import UIKit
 
-private let defaultSize:CGFloat = 23.0
+public let defaultFontIconSize:CGFloat = 23.0
 
 public extension UIBarButtonItem {
     
-    func setFontIcon(_ icon: FontEnum, size: CGFloat = defaultSize) {
+    func setFontIcon(_ icon: FontEnum, size: CGFloat = defaultFontIconSize) {
         setFontIconText(prefix: "", icon: icon, postfix: "", size: size)
     }
     
     func setFontIconText(prefix: String, icon: FontEnum, postfix: String, size: CGFloat) {
         
         let font = FontLoader.getFont(icon, iconSize: size)
-        setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
-        setTitleTextAttributes([NSFontAttributeName: font], for: .highlighted)
-        setTitleTextAttributes([NSFontAttributeName: font], for: .disabled)
+        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .highlighted)
+        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .disabled)
         #if giOS8OrGreater
             setTitleTextAttributes([NSFontAttributeName: font], for: .focused)
         #endif
@@ -56,7 +56,7 @@ public extension UIButton {
 
 public extension UILabel {
     
-    func setFontIcon(_ icon: FontEnum, size: CGFloat = defaultSize) {
+    func setFontIcon(_ icon: FontEnum, size: CGFloat = defaultFontIconSize) {
         setFontIconText(prefix: "", icon: icon, postfix: "", size: size)
     }
     
@@ -90,9 +90,9 @@ public extension UISegmentedControl {
     
     public func setFontIcon(_ icon: FontEnum, forSegmentAtIndex segment: Int) {
         
-        let font = FontLoader.getFont(icon, iconSize: defaultSize)
+        let font = FontLoader.getFont(icon, iconSize: defaultFontIconSize)
         
-        setTitleTextAttributes([NSFontAttributeName: font], for: UIControlState())
+        setTitleTextAttributes([NSAttributedStringKey.font: font], for: UIControlState())
         setTitle(icon.unicode(), forSegmentAt: segment)
     }
 }
@@ -110,7 +110,7 @@ public extension UIImage {
         let fontSize = min(size.width / fontAspectRatio, size.height)
         
         let font = FontLoader.getFont(icon, iconSize: fontSize)
-        let attributes = [NSFontAttributeName: font, NSForegroundColorAttributeName: textColor, NSBackgroundColorAttributeName: backgroundColor, NSParagraphStyleAttributeName: paragraph]
+        let attributes = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: textColor, NSAttributedStringKey.backgroundColor: backgroundColor, NSAttributedStringKey.paragraphStyle: paragraph]
         
         let attributedString = NSAttributedString(string: icon.unicode(), attributes: attributes)
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
