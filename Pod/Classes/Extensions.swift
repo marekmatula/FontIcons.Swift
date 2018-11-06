@@ -20,9 +20,9 @@ public extension UIBarButtonItem {
     func setFontIconText(prefix: String, icon: FontEnum, postfix: String, size: CGFloat) {
         
         let font = FontLoader.getFont(icon, iconSize: size)
-        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
-        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .highlighted)
-        setTitleTextAttributes([NSAttributedStringKey.font: font], for: .disabled)
+        setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
+        setTitleTextAttributes([NSAttributedString.Key.font: font], for: .highlighted)
+        setTitleTextAttributes([NSAttributedString.Key.font: font], for: .disabled)
         #if giOS8OrGreater
             setTitleTextAttributes([NSFontAttributeName: font], for: .focused)
         #endif
@@ -32,17 +32,17 @@ public extension UIBarButtonItem {
 
 public extension UIButton {
     
-    func setFontIcon(_ icon: FontEnum, forState: UIControlState) {
+    func setFontIcon(_ icon: FontEnum, forState: UIControl.State) {
         if let label = titleLabel {
             setFontIcon(icon, size: label.font.pointSize, forState: forState)
         }
     }
     
-    func setFontIcon(_ icon: FontEnum, size:CGFloat, forState: UIControlState) {
+    func setFontIcon(_ icon: FontEnum, size:CGFloat, forState: UIControl.State) {
         setFontIconText(prefix: "", icon: icon, postfix: "", size: size, forState: forState)
     }
     
-    func setFontIconText(prefix: String, icon: FontEnum, postfix: String, size: CGFloat, forState: UIControlState) {
+    func setFontIconText(prefix: String, icon: FontEnum, postfix: String, size: CGFloat, forState: UIControl.State) {
         
         let font = FontLoader.getFont(icon, iconSize: size)
         
@@ -92,7 +92,7 @@ public extension UISegmentedControl {
         
         let font = FontLoader.getFont(icon, iconSize: defaultFontIconSize)
         
-        setTitleTextAttributes([NSAttributedStringKey.font: font], for: UIControlState())
+        setTitleTextAttributes([NSAttributedString.Key.font: font], for: UIControl.State())
         setTitle(icon.unicode(), forSegmentAt: segment)
     }
 }
@@ -110,7 +110,7 @@ public extension UIImage {
         let fontSize = min(size.width / fontAspectRatio, size.height)
         
         let font = FontLoader.getFont(icon, iconSize: fontSize)
-        let attributes = [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: textColor, NSAttributedStringKey.backgroundColor: backgroundColor, NSAttributedStringKey.paragraphStyle: paragraph]
+        let attributes = [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: textColor, NSAttributedString.Key.backgroundColor: backgroundColor, NSAttributedString.Key.paragraphStyle: paragraph]
         
         let attributedString = NSAttributedString(string: icon.unicode(), attributes: attributes)
         UIGraphicsBeginImageContextWithOptions(size, false , 0.0)
