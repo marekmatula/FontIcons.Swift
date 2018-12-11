@@ -27,7 +27,7 @@ open class FontLoader {
         }
     }
 
-    open static func loadFont(_ fontName:String, bundleName: String) {
+    public static func loadFont(_ fontName:String, bundleName: String) {
 
         let bundle = Bundle(for: FontLoader.self)
         var fontURL : URL?

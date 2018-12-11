@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FontIcons"
-  s.version          = "1.4.4"
+  s.version          = "1.5.0"
   s.summary          = "Swift Font icon library"
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Easy extensible to other fonts.
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  # s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  # s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Classes/FontIcons.swift', 'Pod/Classes/Extensions.swift'
